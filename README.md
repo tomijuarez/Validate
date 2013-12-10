@@ -24,6 +24,7 @@ For data via POST or GET:
 - ```email```
 - ```name```
 - ```country```
+
 For Files (images, videos, music, documents):
 
 - ```image```
