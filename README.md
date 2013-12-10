@@ -11,6 +11,7 @@ The ```array``` param passed in ```setFlags``` contains all the expected values 
 Here is a list of the types that you can select.
 
 For data via POST or GET:
+
 - ```int```
 - ```float```
 - ```alpha```
@@ -23,7 +24,9 @@ For data via POST or GET:
 - ```email```
 - ```name```
 - ```country```
+- 
 For Files (images, videos, music, documents):
+
 - ```image```
   - ```jpg```
   - ```jpeg```
@@ -72,6 +75,7 @@ Here's a list with the possible errors:
 - There's no file assigned -> when there is not any file assigned.
 - The uploaded file size must be less than 5MB -> when the file is bigger than 5MB*.
 - The uploaded file extension is not allowed -> when the file is not in the supported extensions*.
+
 Example
 =======
 `````php
