@@ -69,12 +69,12 @@ If the data is corrupted, you can get the errors using the ```getErrors()``` met
 array getErrors();
 `````
 Here's a list with the possible errors:
-- ```keyName must be defined``` -> when you define a flag, but it does not lies in the data.
-- ```keyName does not match with the keyValue property``` -> when the data does not have the expected type.
-- ```keyName can't be empty``` -> when the data is empty.
-- ```There's no file assigned``` -> when there is not any file assigned.
-- ```The uploaded file size must be less than 5MB``` -> when the file is bigger than 5MB*.
-- ```The uploaded file extension is not allowed``` -> when the file is not in the supported extensions*.
+- ```keyName must be defined``` - when you define a flag, but it does not lies in the data.
+- ```keyName does not match with the keyValue property``` - when the data does not have the expected type.
+- ```keyName can't be empty``` - when the data is empty.
+- ```There's no file assigned``` - when there is not any file assigned.
+- ```The uploaded file size must be less than 5MB``` - when the file is bigger than 5MB*.
+- ```The uploaded file extension is not allowed``` - when the file is not in the supported extensions*.
 
 Example
 =======
