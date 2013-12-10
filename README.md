@@ -1,51 +1,48 @@
 Validation
 ==========
-Tool for validate received data.
-
+Tool for validate received data [```POST|GET|FILE```].
 Usage
 =====
-
 `````php
 void setFlags(Array $flags);
 `````
-The array passed in setFlags contains all the expected values and its types.
+The ```array``` param passed in ```setFlags``` contains all the expected values and its types.
 
 Here is a list of the types that you can select.
 
 For data via POST or GET:
-- int
-- float
-- alpha
-- alphanumeric
-- symbols
-- path
-- nick
-- password
-- birthday
-- email
-- name
-- country
-
+- ```int```
+- ```float```
+- ```alpha```
+- ```alphanumeric```
+- ```symbols```
+- ```path```
+- ```nick```
+- ```password```
+- ```birthday```
+- ```email```
+- ```name```
+- ```country```
 For Files (images, videos, music, documents):
-- image
-  - jpg
-  - jpeg
-  - bmp
-  - gif
-  - png
-- video
-  - wmv
-  - mp4
-  - 3gp
-- music
-  - mp3
-  - ogg
-- doc
-  - doc
-  - docx
-  - ppt
-  - pdf
-  - txt
+- ```image```
+  - ```jpg```
+  - ```jpeg```
+  - ```bmp```
+  - ```gif```
+  - ```png```
+- ```video```
+  - ```wmv```
+  - ```mp4```
+  - ```3gp```
+- ```music```
+  - ```mp3```
+  - ```ogg```
+- ```doc```
+  - ```doc```
+  - ```docx```
+  - ```ppt```
+  - ```pdf```
+  - ```txt```
 
 Once you set the flags, you can now call the ```validate()``` method.
 
@@ -56,13 +53,12 @@ boolean validate(Array $dataContainer, String category);
 The category paramether is the type of the data that must to be validate.
 
 Actually, exists only 5 types of data:
-- data
-- image
-- video
-- music
-- doc
-
-If some value does not match with the flags that you define, then the validate method will return false, if everything goes ok, it will be return true.
+- ```data```
+- ```image```
+- ```video```
+- ```music```
+- ```doc```
+If some value does not match with the flags that you define, then the validate method will return ```false```, if everything goes ok, it will be return ```true```.
 
 If the data is corrupted, you can get the errors using the ```getErrors()``` method.
 
@@ -76,8 +72,8 @@ Here's a list with the possible errors:
 - There's no file assigned -> when there is not any file assigned.
 - The uploaded file size must be less than 5MB -> when the file is bigger than 5MB*.
 - The uploaded file extension is not allowed -> when the file is not in the supported extensions*.
-
-Example:
+Example
+=======
 `````php
 <?php
 require_once 'Validation.php';
@@ -122,7 +118,7 @@ Pretty soon
 - Add specific types dynamically.
 - Better error handling.
 - More regular expressions (URL, IPv4, IPv6, Credit Card, Coordinates, Phone, etc.)
-- Better support for files.
+- Better support for files```*```.
 
 Contact
 =======
