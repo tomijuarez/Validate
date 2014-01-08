@@ -17,6 +17,9 @@ Class Validation {
    * List of the regular expressions for validation utilities.
    */
   protected static $_rules = [
+    /**
+     * MAL HECHAS :[ 
+     **/
       "int" 	        => '/^\d+$/'
     , "float"		=> '/^\d+(\.\d{1,2})?/'
     , "alpha"		=> '/^[a-zA-Z]+$/'
